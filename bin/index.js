@@ -7,6 +7,6 @@ const { version } = require('../package.json')
 registerCommand(program).then(() => {
   // 解析用户执行命令传入参数
   program
-    .version(version, '-V, --version')
+    .version(`v${version}`, '-V, --version')
     .parse(process.argv);
 })
