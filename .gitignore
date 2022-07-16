@@ -1,0 +1,6 @@
+.history
+.idea
+.vscode
+.husky
+.DS_store
+node_modules
