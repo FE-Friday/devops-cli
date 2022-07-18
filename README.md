@@ -1,18 +1,34 @@
 # DevOps-CLI
 基于蓝鲸 `Magicbox` 和 `Vue` 的前端脚手架。
 
+## 配置
+```bash
+# 全局配置
+$ npm config set registry http://registry.devops.canway.com/
+$ npm install -g @devops/cli
+
+# 临时配置
+npm install -g @devops/cli --registry=http://registry.devops.canway.com/
+```
 ## 安装
 ```bash
-$ npm install -g @devops/cli
+$ npm install -g @devops/cli --registry=http://registry.devops.canway.com/
 
 # or
 
-$ yarn global add @devops/cli
+$ yarn global add @devops/cli --registry=http://registry.devops.canway.com/
 ```
 
 ## 使用
 ```bash
+# 创建项目
 $ devops create projectName
+
+# 更新脚手架
+$ devops upgrade
+
+# 查看当前版本
+$ devops -V
 ```
 
 ## 提供模版
