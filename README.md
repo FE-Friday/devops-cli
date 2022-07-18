@@ -27,6 +27,9 @@ $ devops create projectName
 # 更新脚手架
 $ devops upgrade
 
+# 查看项目模板列表
+$ devops list
+
 # 查看当前版本
 $ devops -V
 ```
