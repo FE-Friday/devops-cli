@@ -35,14 +35,15 @@ class Generator {
    * 3、return 用户选择的模板名称
    */
   async getBranchName () {
+    const aliasTemplate = templates.map(item => item.name);
     const { branch } = await inquirer.prompt({
       name: 'branch',
       type: 'list',
-      choices: Object.keys(templates),
+      choices: aliasTemplate,
       message: 'Please choose a template to create project'
     });
-
-    return templates[branch];
+    const currentTemplate = templates.find(item => item.name === branch);
+    return currentTemplate['branch'];
   }
 
   /**
