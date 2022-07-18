@@ -13,14 +13,14 @@ module.exports = {
   // 模板配置
   templates: [
     {
-      name: 'DevOps-iframe',
+      name: 'devops-iframe',
       branch: 'template-iframe-vue2',
-      description: '支持DevOps微前端iframe模式项目模版',
+      description: '支持devops微前端iframe模式项目模版',
     },
     {
-      name: 'DevOps-AMD',
+      name: 'devops-amd',
       branch: 'template-amd-vue2',
-      description: '支持DevOps微前端AMD模式项目模版'
+      description: '支持devops微前端AMD模式项目模版'
     }
   ]
 };
