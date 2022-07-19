@@ -21,7 +21,7 @@ class HttpService {
       }
 
       request.on('error', reject);
-      request.end(response, resolve, reject);
+      request.end();
     })
   }
 
