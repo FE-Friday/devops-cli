@@ -1,10 +1,10 @@
 {
   "name": "@devops/cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "DevOps 前端项目脚手架",
   "main": "./bin/index.js",
   "scripts": {
-    "postinstall": "devops-husky install"
+    "prepare": "devops-husky install"
   },
   "bin": {
     "devops": "./bin/index.js"

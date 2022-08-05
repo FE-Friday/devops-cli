@@ -37,7 +37,8 @@ $ devops -V
 ## 提供模版
 
 - devops-iframe：基于 `@devops/bk-magic-vue` 和 `Vue2.x` 的项目框架，适用于 `DevOPs` 微前端架构下的 `iframe` 模式。
-- devops-AMD：基于 `@devops/bk-magic-vue` 和 `Vue2.x` 的项目框架，适用于 `DevOPs` 微前端架构下的 `AMD` 模式。
+- devops-amd：基于 `@devops/bk-magic-vue` 和 `Vue2.x` 的项目框架，适用于 `DevOPs` 微前端架构下的 `AMD` 模式。
+- devops-plugin-card：支持 `devops` 卡片插件的项目模板
 
 ## 查看帮助
 ```bash
