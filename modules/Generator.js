@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const chalk = require('chalk');
 const spawn = require('cross-spawn');
 const { loading } = require('../utils');
-const { templates, gitlab } = require('../config');
+const { templates } = require('../config');
 
 class Generator {
   constructor (name, targetDir) {
@@ -52,15 +52,13 @@ class Generator {
    * 2、调用下载工具进行下载
   */
   async download (branchName) {
-    const { type, host, group, repository, headers } = gitlab;
-    const requestUrl = `${type}:${host}:${group}/${repository}#${branchName}`;
+    const requestUrl = `FE-Friday/devops-templates#${branchName}`;
     
     await loading (
       this.downloadGitRepo,
       'waiting download template',
       requestUrl,
-      path.resolve(process.cwd(), this.targetDir),
-      { headers }
+      path.resolve(process.cwd(), this.targetDir)
     );
   }
 
